@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Udval's Portfolio</title>
+    <link rel="preconnect" href="https://fonts gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans :ital,wght@0,100;0
+    , 200;0,300; 0,400;0,500;0,600; 0,700;1,100;1,200;1,300;1,400;1,500;1, 600;1,700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #222;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: none; 
+        }
+
+        .uppercase-text {
+        text-transform: uppercase;
+        }   
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #222;
+        }
+
+        .first_text {
+            font-size: 55px;
+            color: #555;
+            text-transform: lowercase;
+            font-family: 'Organetto Ultra Bold', sans-serif;
+        }
+
+        .second_text {
+            font-size: 100px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        #center-section {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 20%;
+        }
+
+        .about {
+            width : 100%
+            padding: 100px 0px;
+            background-color: #191919;
+        }
+
+        .about img{
+            height: auto;
+            width: 430px;    
+        }
+
+        .about-text{
+            width: 550px;
+        }
+
+        .main{
+            width: 1130px;
+            max-width: 95%;
+            margin:0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about-text h2{
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+         .about-text h5{
+            color: white;
+            letter-spacing: 2px;
+            font-size:  22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+         }
+         .about-text p{
+            color: #fff;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+         }
+
+         button{
+            background-color: #d24e01;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border border-radius: 30px;
+            font-weight: bold;
+            transition: .4s;
+ 
+         }
+
+
+         button:hover{
+            background-color: transparent;
+            border:2px solid #gray;
+            cursor: pointer;
+         }
+
+         .service{
+            background-color: #101010;
+            width: 100%;
+            padding: 100px 0px;
+
+         }
+
+         .tittle h2{
+            color: white;
+            font-size: 75px;
+            width: 1130px;
+            margin: 30px auto;
+            text-align: center;
+         }
+
+         .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+         }
+
+         .card{
+            height: 365px;
+            width: 335px;
+            padding: 20px 35px;
+            background: #191919;
+            border-radius: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+         }
+
+         .card i{
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0px;
+            color: #d24e01;
+         }
+
+         h5{
+            color: white;
+            font-size: 23px;
+            margin-bottom: 15px;
+         }
+
+         .pra p{
+            color: whitesmoke;
+            font-size: 16px;
+            line-height: 27px;
+            line-height: 27px;
+            margin-bottom: 25px;
+         }
+
+         .card .button{
+            background-color: #d24e01;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 9px 22px;
+            border: 2px solid transparent;
+            font-weight: bold;
+            transition: .4s;
+         }
+
+         .card .button:hover{
+            background-color: transparent;
+            border:2px solid #gray;
+            cursor: pointer;
+         }
+
+         .contact-me{
+            width: 100%;
+            height: 290px;
+            background: #191919;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .contact-me p{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+         }
+         .contact-me .button-two{
+            background-color: #d24e01;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border border-radius: 30px;
+            font-weight: bold;
+            transition: .4s;
+         }
+
+         .contact-me .button-two:hover{
+            background-color: transparent;
+            border:2px solid #gray;
+            cursor: pointer;
+         }
+
+         footer{
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: #101010;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+         footer p:nth-child(1){
+            font-size: 30px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: bold;
+         }
+
+         footer p:nth-child(2){
+            color: white;
+            font-size: 17px;
+            width: 500px;
+            text-align: center;
+            line-height: 26px;
+         }
+         .social{
+            display: flex;
+
+         }
+         .social a{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #d24e01;
+            border-radius: 50%;
+            margin: 22px 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+         }
+
+          .social a:hover{
+            transform: scale(1.3);
+            transition: .3s;
+          }
+
+          .end{
+            position: absolute;
+            color: #d24e01;
+            bottom: 35px;
+            font-size: 14px;
+            
+          }
+
+    </style>
+
+
+</head>
+<body>
+    
+     <div class="navbar">
+        <div class="left_content">
+
+        </div>
+
+        <div class="medium_content">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="right_content">
+            <i class="fa-solid fa-bars" style="color: #d24e01;"></i>
+        </div>
+    </div>
+
+    <div id="center-section">
+        <div>
+            <h1 class="first_text">I'm a</h1>
+            <h2 class="second_text">Graphic <br> designer</h2>
+
+        </div>
+    </div>
+
+
+    <section class="about">
+        <div class="main">
+             <img src="/Users/otgonbayardugerjav/Desktop/web/285A6CC3-1113-4371-B86E-A298245FC2FD.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p> I'm Professional Graphic and Photographer, and i am very passionate and dedicated to my studying for 3 years Experience as a graphic designer.I have acquired the skills and knowledge necessary to make your project a success.I enjoy every step of design process from discussion and collaboration to concept and excution.</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="service">
+        <dic class="tittle">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-brush"></i>
+                <h5>Graphic Design</h5>
+                <div  class="pra">
+                    <p>I'm a passionate graphic designer with a creative edge and a keen eye for detail. With 3 years of experience in the world of visual storytelling.</p>
+
+                    <p>
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Web Development</h5>
+                <div  class="pra">
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+                    <p>
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h5>Photo shooting</h5>
+                <div  class="pra">
+                    <p>Photography, to me, is not just a profession; it's a profound passion. If you're interested check @agshinufe instagram.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="contact-me">
+        <p>Let Me Get You A Beautiful Website.</p>
+        <a class="button-two" href="#">Hire Me</a>
+      </div>
+
+      <footer>
+          <p>Serod Udval</p>
+          <p>For more social media contancting - please click on the link below to follow my accounts:</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <p class="end">CopyRight By Serod Udval</p>
+      </footer>
+
+</body>
+</html>
